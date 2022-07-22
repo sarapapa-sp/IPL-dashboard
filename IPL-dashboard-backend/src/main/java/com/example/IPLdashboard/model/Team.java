@@ -13,7 +13,7 @@ public class Team {
     private long totalWins;
 
     @Transient
-    private List<Match> matches;
+    private List<Match> match;
 
     public long getId() {
         return id;
@@ -65,10 +65,10 @@ public class Team {
     }
 
     public List<Match> getMatches() {
-        return matches;
+        return match;
     }
 
-    public void setMatches(List<Match> matches) {
-        this.matches = matches;
+    public void setMatches(List<Match> match) {
+        this.match = match;
     }
 }

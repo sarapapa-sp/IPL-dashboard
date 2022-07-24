@@ -1,0 +1,22 @@
+
+
+.match--page{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.year--selector{
+    justify-self: end;
+    padding: 2rem;
+    /* font-size: 1.5rem; */
+
+}
+
+.year-selector--list{
+    list-style-type: none;
+    text-align: right ;
+}
+
+.year-selector--list li{
+    margin-top: 10px;
+}

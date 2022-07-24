@@ -21,9 +21,14 @@ public class TeamController {
     @Autowired
     private MatchRepository matchRepository;
 
+    @GetMapping("/teams")
+    public Iterable<Team> getTeams(){
+        return teamRepository.findAll();
+    }
+
     // getting for the team
     @GetMapping("/teams/{teamName}")
-    public Team getTeam(@PathVariable String teamName){
+    public Team getTeamDate(@PathVariable String teamName){
         // We will get the info of the team from teamRepository and then we will populate it with the
         // last matches data
         Team team =  teamRepository.findByTeamName(teamName);

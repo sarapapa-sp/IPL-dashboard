@@ -60,6 +60,8 @@
   padding: 10px;
   border-radius:10px;
 
+  margin-bottom: 10px;
+
 }
 
 .other--team{
@@ -86,4 +88,9 @@
 .match-small--card{
   padding: 10px;
   border-radius: 10px;
+}
+
+/* Match Page */
+.match--page-match{
+  font-size: 1.8rem;
 }

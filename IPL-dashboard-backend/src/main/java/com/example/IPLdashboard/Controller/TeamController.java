@@ -22,7 +22,7 @@ public class TeamController {
     private MatchRepository matchRepository;
 
     @GetMapping("/teams")
-    public Iterable<Team> getTeams(){
+    public List<Team> getTeams(){
         return teamRepository.findAll();
     }
 

@@ -94,3 +94,33 @@
 .match--page-match{
   font-size: 1.8rem;
 }
+
+
+
+/* Main Page */
+.main-page--header{
+  /* align-items: center; */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.teams-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  
+}
+
+.team-card{
+  border: 2px solid white;
+  font-size: 1.5rem;
+  
+  text-align: center;
+  height: 100px;
+  padding: 17px;
+  
+}
+.main-page .main-page--header .header{
+  margin: 20px auto;
+  font-size: 3rem;
+}

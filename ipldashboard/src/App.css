@@ -2,3 +2,88 @@
   text-align: left;
   padding:20px;
 }
+
+/* Team Page Styling */
+
+.team-page{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 1rem;
+}
+
+.team-page .team-page-name{
+  grid-column: span 3;
+  justify-self: start;
+  align-self: center;
+}
+
+.team-page .team-page-name .team--name{
+  font-size: 3.5rem;
+}
+
+.team-page .team-page-win-loss{
+  justify-self: center;
+}
+
+.team-page .team-page-detail--card{
+  grid-column: span 4;
+}
+
+.team-page--more{
+  font-size: 1.5rem;
+  justify-self: center;
+  align-self: center;
+}
+.team-page-win-loss{
+  padding: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+/* Won And lost cards */
+.won-card{
+  background-color: green;
+}
+.lost-card{
+  background-color: brown;
+}
+/* End of won and lost Cards */
+
+/* MatchDetail card Stylling */
+
+.match-detail--card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 10px;
+  border-radius:10px;
+
+}
+
+.other--team{
+  font-size: 1.8rem;
+}
+
+.match--date,.match--venue,.match--winner{
+  margin-top: 15px;
+}
+.match-detail--card .additional--information{
+  text-align: right;
+  align-self: center;
+}
+
+.match-detail--card .additional--information .info--label{
+  /* margin-top: 5px; */
+}
+
+.match-detail--card .additional--information .info--data{
+  color:red;
+  /* margin-top: 5px; */
+} 
+
+.match-small--card{
+  padding: 10px;
+  border-radius: 10px;
+}

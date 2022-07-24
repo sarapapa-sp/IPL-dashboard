@@ -9,7 +9,7 @@ const MatchDetailCard = ({ match, teamName }) => {
 
   return (
     <div className="match-detail--card">
-      <h2>Latest Match</h2>
+      
       <h3>
         <Link to={otherTeamRoute}>vs {otherTeam}</Link>
       </h3>

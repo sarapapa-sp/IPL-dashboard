@@ -10,7 +10,7 @@ const TeamPage = () => {
   console.log(teamName)
     
     React.useEffect(() => {
-      console.log("Hello Wolrd");
+      
       const fetchData = async () => {
         const response = await fetch(`http://localhost:8082/teams/${teamName}`);
 
@@ -25,11 +25,13 @@ const TeamPage = () => {
     return <h1>Team Not found</h1>
   }
   return (
-    <div className='team-page'>
-          <h1>{team.teamName}</h1>
+    <div className="team-page">
+      <h1>{team.teamName}</h1>
+      <h2>Latest Match</h2>
       <MatchDetailCard match={team.matches[0]} teamName={team.teamName} />
-      {team.matches.slice(1).map(match => <MatchSmallCard match={match} teamName={ team.teamName} />)}
-          
+      {team.matches.slice(1).map((match) => (
+        <MatchSmallCard match={match} teamName={team.teamName} />
+      ))}
     </div>
   );
 }
